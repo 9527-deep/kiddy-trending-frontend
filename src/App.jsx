@@ -24,7 +24,7 @@ function App() {
           <p className="text-sm text-gray-600">Channel: {video.channel}</p>
           <p className="text-sm">Views: {video.views.toLocaleString()} Likes: {video.likes.toLocaleString()}</p>
           <p className="text-sm">Tags: {video.tags?.join(", ")}</p>
-          <a href={video.video_url} className="text-blue-500 text-sm" target="_blank" rel="noreferrer">Watch Video</a>
+          <a href={video.video_url} className="text-blue-500 text-sm" target="_blank" rel="noreferrer">Watch</a>
         </div>
       ))}
     </div>
@@ -38,7 +38,7 @@ function App() {
           <p className="text-sm text-gray-700">Channel: {video.channel}</p>
           <p className="text-sm">Views: {video.views.toLocaleString()} Likes: {video.likes.toLocaleString()}</p>
           <p className="text-sm">Followers: {video.followers?.toLocaleString()} Ratio: {Math.round(video.multiplier)}x</p>
-          <a href={video.video_url} className="text-blue-600 text-sm" target="_blank" rel="noreferrer">Watch Video</a>
+          <a href={video.video_url} className="text-blue-600 text-sm" target="_blank" rel="noreferrer">Watch</a>
         </div>
       ))}
     </div>
@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <header className="bg-white shadow p-4 text-center sticky top-0 z-10">
-        <h1 className="text-2xl font-bold">YouTube Trending for Kids</h1>
+        <h1 className="text-2xl font-bold">Kids YouTube Trending</h1>
       </header>
       <main className="flex-1 px-4 py-2 max-w-screen-sm w-full mx-auto">
         {activeTab === "trending" && renderTrending()}
