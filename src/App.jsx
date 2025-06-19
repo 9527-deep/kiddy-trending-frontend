@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <header className="bg-white shadow p-4 text-center sticky top-0 z-10">
-        <h1 className="text-2xl font-bold">Kids YouTube Trending</h1>
+        <h1 className="text-2xl font-bold">YouTube Trending for Kids</h1>
       </header>
       <main className="flex-1 px-4 py-2 max-w-screen-sm w-full mx-auto">
         {activeTab === "trending" && renderTrending()}
